@@ -45,7 +45,6 @@ export default {
 
     //获取用户列表
     mock.onGet('/user/list').reply(config => {
-		console.log(121);
       let {name} = config.params;
       let mockUsers = _Users.filter(user => {
         if (name && user.name.indexOf(name) == -1) return false;
@@ -58,7 +57,6 @@ export default {
           }]);
         }, 1000);
       });
-		
     });
 
     //获取用户列表（分页）

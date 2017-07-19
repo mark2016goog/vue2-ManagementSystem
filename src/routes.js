@@ -12,7 +12,7 @@ import echarts from './views/charts/echarts.vue'
 
 let routes = [
     {
-        path: '/Login',
+        path: '/login',
         component: Login,
         name: '',
         hidden: true
